@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calendar App</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.css" />
+
+    <script src="https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.js"></script>
+
+    <script src="https://uicdn.toast.com/tui.dom/v3.0.0/tui-dom.js"></script>
+
+    <script src="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.min.js"></script>
+
+    <script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.min.js"></script>
+
+    <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="app-header">
+
+        <!--Siemens Logo-->
+        <img alt="logo" id="logo" src="images/SiemensLogo.png" />
+
+        <!-- Div to display today date -->
+        <div class="today-date" id="date">
+
+        </div>
+
+        <!-- Span to display the arrows and today button -->
+        <span id="menu-navi">
+          <button type="button" class="btn move-today" data-action="move-today">Today</button>
+          <button type="button" class="btn move-prev" data-action="move-prev">
+            <i class="arrow left"></i>
+          </button>
+          <button type="button" class="btn move-next" data-action="move-next">
+            <i class="arrow right"></i>
+          </button>
+        </span>
+
+        <div class="CalendarType">
+            <select class="dropdown" name="Calendar" id="calendarType">
+            <option class="dropdown-content" value="month" data-action="month" selected="selected">Monthly</option>
+            <option class="dropdown-content"  value="week" data-action="week" >Weekly</option>
+          </select>
+        </div>
+
+
+    </div>
+
+    <!-- Div to display calendar -->
+    <div class="app-calendar" id="calendar"></div>
+
+    <!-- Custom PopUp Card for My Calendar -->
+    <div class="promo_card" id="MyCalendar">
+    </div>
+
+    <!-- Custom PopUp Card for Company -->
+    <div class="promo_card" id="Company">
+    </div>
+
+    <!-- Custom PopUp Card for Events -->
+    <div class="promo_card" id="Events">
+    </div>
+
+    <!-- Custom Create Schedule PopUp -->
+    <div class="promo_card" id="create">
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+    <script defer src="js/main.js"></script>
+
+</body>
+
+</html>

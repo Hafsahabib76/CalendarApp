@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.app-header {
+    position: relative;
+    width: 94vw;
+    height: 6.5vw;
+    padding: 1vw 2vw .59vw 2vw;
+}
+
+#logo {
+    position: relative;
+    left: 1vw;
+    display: inline-block;
+    width: 8.5vw;
+    height: 4.8vw;
+}
+
+.today-date {
+    display: inline-block;
+    font-size: 2vw;
+    position: absolute;
+    left: 45%;
+    margin-top: 1vw;
+}
+
+#menu-navi {
+    float: right;
+    display: block;
+    margin-top: 1vw;
+    margin-right: -6vw;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6em 1.4em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 1em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+    background-color: #D9D9D9;
+    text-align: center;
+    transition: all 0.2s;
+    font-size: 1vw;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #A6A6A6;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.app-calendar {
+    padding: 0 2vw 1vw 2vw;
+    height: 13vw;
+}
+
+.CalendarType {
+    float: right;
+    display: block;
+    margin-top: 1vw;
+    margin-right: 1vw;
+}
+
+.dropdown {
+    display: inline-block;
+    padding: 0.6em 1.4em;
+    font-size: 1vw;
+    position: relative;
+    background-color: #E9EBEC;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
